@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_purchase_orders_from_file" model="ir.actions.act_window">
+        <field name="name">Purchase Orders From File</field>
+        <field name="res_model">purchase.orders.from.file</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_procurement_management_purchase_orders_from_file"
+              name="Purchase Orders From File"
+              parent="purchase.menu_procurement_management"
+              action="action_purchase_orders_from_file"
+              sequence="5"/>
+
+
+    <record id="purchase_orders_from_file_form_view" model="ir.ui.view">
+            <field name="name">purchase.orders.from.file.form.view</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id"
+                   ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Import Logs">
+                        <field name="import_logs"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+</odoo>
