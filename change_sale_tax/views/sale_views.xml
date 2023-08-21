@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <act_window
+        name="Change TAX"
+        res_model="sale.order.tax.wizard"
+        binding_model="sale.order"
+        binding_views="form,list"
+        view_mode="form"
+        target="new"
+        id="action_sale_order_change_tax"
+    />
+
+</odoo>
