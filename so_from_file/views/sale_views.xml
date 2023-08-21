@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_sale_order_from_file" model="ir.actions.act_window">
+        <field name="name">Sale Order From File</field>
+        <field name="res_model">sale.order.from.file</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_sale_order_from_file"
+              name="Sale Order From File"
+              parent="sale.sale_order_menu"
+              action="action_sale_order_from_file"
+              sequence="45"/>
+
+
+    <record id="sale_order_from_file_form_view" model="ir.ui.view">
+            <field name="name">sale.order.from.file.form.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id"
+                   ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Import Logs">
+                        <field name="import_logs"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+</odoo>
