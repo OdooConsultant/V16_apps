@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="vendor_statement_tree_view" model="ir.ui.view">
+        <field name="name">vendor.statement.tree.view</field>
+        <field name="model">vendor.statement</field>
+        <field name="arch" type="xml">
+            <tree string="Monthly Vendor Statement">
+                <header>
+                    <button name="create_line" string="Reload" type="object" class="btn-primary"/>
+                </header>
+                <field name="name"/>
+                <field name="from_date"/>
+                <field name="to_date"/>
+                <field name="partner_id"/>
+                <field name="opening_balance"/>
+                <field name="total_debit"/>
+                <field name="total_credit"/>
+                <field name="closing_balance"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="vendor_statement_form_view" model="ir.ui.view">
+        <field name="name">vendor.statement.form.view</field>
+        <field name="model">vendor.statement</field>
+        <field name="arch" type="xml">
+            <form string="Monthly Vendor Statement">
+                <header>
+                    <button name="create_line" string="Reload" type="object" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" string="Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <label for="month" string="Month"/>
+                            <div name="month">
+                                <field name="month" class="oe_inline"/>
+                                -
+                                <field name="year" class="oe_inline" options="{'format': 0}"/>
+                            </div>
+                            <field name="partner_id" string="Vendor"/>
+                            <field name="opening_balance"/>
+                        </group>
+                        <group>
+                            <label for="from_date" string="Duration"/>
+                            <div>
+                                <field name="from_date" class="oe_inline" readonly="True" force_save="1"/>
+                                -
+                                <field name="to_date" class="oe_inline" readonly="True" force_save="1"/>
+                            </div>
+                            <field name="closing_balance"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="statement_lines" string="Statements" readonly="True" force_save="1">
+                            <tree>
+                                <field name="date"/>
+                                <field name="name"/>
+                                <field name="debit" sum="Total Debit"/>
+                                <field name="credit" sum="Total Credit"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <div name="note_group" class="mt-2 mt-md-0">
+                        <field name="note" nolabel="1" placeholder="Terms and conditions..."/>
+                        <div class="oe_clear"/>
+                    </div>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="vendor_statement_action" model="ir.actions.act_window">
+        <field name="name">Monthly Vendor Statement</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">vendor.statement</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="vendor_statement_menu"
+              name="Monthly Vendor Statement"
+              parent="account.menu_finance_reports"
+              action="vendor_statement_action"
+              sequence="0"/>
+
+</odoo>
