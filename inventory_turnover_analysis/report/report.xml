@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_turnover_analysis_xlsx" model="ir.actions.report">
+        <field name="name">Inventory Turnover Analysis</field>
+        <field name="model">inventory.turnover.analysis</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">inventory_turnover_analysis.report_turnover_analysis</field>
+        <field name="report_file">inventory_turnover_analysis.report_turnover_analysis</field>
+        <field name="binding_model_id" ref="model_inventory_turnover_analysis"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
