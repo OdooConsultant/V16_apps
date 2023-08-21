@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="inventory_fsn_form_view" model="ir.ui.view">
+        <field name="name">inventory.fsn.analysis.form.view</field>
+        <field name="model">inventory.fsn.analysis</field>
+        <field name="arch" type="xml">
+            <form string="Inventory FSN Analysis">
+                <header>
+                    <button name="create_line" string="Refresh" type="object" class="btn-primary" icon="fa-refresh"/>
+                </header>
+                <sheet>
+                    <style>
+                        .label_width{
+                        width:200px;
+                        font-size:22px;
+                        }
+                    </style>
+                    <group>
+                        <group string="Inventory FSN Analysis">
+                            <label for="start_date" string="Duration"/>
+                            <div>
+                                <field name="start_date" class="oe_inline"/>
+                                -
+                                <field name="end_date" class="oe_inline"/>
+                            </div>
+                            <field name="warehouse_id"/>
+                            <field name="location_id" domain="[('usage', '=', 'internal')]"/>
+                            <field name="product_category" widget="many2many_tags"/>
+                            <field name="product_ids" string="Products" widget="many2many_tags"/>
+                            <field name="is_zero_product" string="Zero Movement"/>
+                        </group>
+                        <group>
+                            <group string="FSN Classification">
+                                <field name="fsn_classification" class="oe_inline"/>
+                            </group>
+                            <group string="FSN">
+                                <field name="fast_moving" class="oe_inline" placeholder="Fast Moving"/>
+                                <field name="slow_moving" class="oe_inline" placeholder="Slow Moving"/>
+                                <field name="non_moving" class="oe_inline" placeholder="Non mOving"/>
+                            </group>
+                        </group>
+                    </group>
+                    <group>
+                        <div readonly="1">
+                            <table style="text-align:center; margin-left:190%" border="0">
+                                <h2>
+                                    <tr style="text-align:center">
+                                        <th>
+                                            <label class="label_width" for="total_opening_stock"/>
+                                        </th>
+                                        <th>
+                                            <label class="label_width" for="total_closing_stock"/>
+                                        </th>
+                                    </tr>
+                                    <tr style="text-align:center">
+                                        <td style="width:25%; color:#3498db;">
+                                            <field name="total_opening_stock" nolabel="1" readonly="1"/>
+                                        </td>
+                                        <td style="width:25%; color:#3498db;">
+                                            <field name="total_closing_stock" nolabel="1" readonly="1"/>
+                                        </td>
+                                    </tr>
+                                </h2>
+                            </table>
+                        </div>
+                    </group>
+
+                    <field name="sm_lines" readonly="1" nolabel="1">
+                        <tree>
+                            <field name="sm_id" invisible="1"/>
+                            <field name="product_id"/>
+                            <field name="product_category"/>
+                            <field name="opening_stock" sum="Total Opening Stock"/>
+                            <field name="stock_in" sum="Total Stock In" invisible="1"/>
+                            <field name="stock_out" sum="Total Stock Out" invisible="1"/>
+                            <field name="closing_stock" sum="Total Closing Stock"/>
+                            <field name="average_stock" optional="hide"/>
+                            <field name="sale"/>
+                            <field name="turnover_ratio"/>
+                            <field name="fsn" decoration-danger="fsn=='non_moving'"
+                                   decoration-success="fsn=='fast_moving'" decoration-warning="fsn=='slow_moving'"/>
+                        </tree>
+                        <form>
+                            <group>
+                                <group>
+                                    <field name="sm_id" invisible="1"/>
+                                    <field name="product_id"/>
+                                </group>
+                                <group>
+                                    <field name="product_category"/>
+                                    <field name="fsn" decoration-danger="fsn=='non_moving'"
+                                           decoration-success="fsn=='fast_moving'"
+                                           decoration-warning="fsn=='slow_moving'"/>
+                                </group>
+                            </group>
+                            <notebook>
+                                <page string="Product Movements">
+                                    <field name="product_moves" readonly="1">
+                                        <tree>
+                                            <field name="date"/>
+                                            <field name="product_id" optional="show"/>
+                                            <field name="reference" optional="show"/>
+                                            <field name="picking_type_id" optional="show"/>
+                                            <field name="location_id" string="From" optional="show"/>
+                                            <field name="location_dest_id" string="To" optional="show"/>
+                                            <field name="product_uom_qty" optional="show" sum="Total"/>
+                                            <field name="state" optional="hide"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                            </notebook>
+                        </form>
+                    </field>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_run_ir_action_fsn" model="ir.actions.server">
+        <field name="name">Default records</field>
+        <field name="binding_view_types">form</field>
+        <field name="model_id" ref="model_inventory_fsn_analysis"/>
+        <field name="binding_model_id" ref="inventory_fsn_analysis.model_inventory_fsn_analysis"/>
+        <field name="state">code</field>
+        <field name="code">
+            action=model.default_action()
+        </field>
+    </record>
+
+    <menuitem id="inventory_fsn_analysis_menu"
+              name="Inventory FSN Analysis"
+              parent="stock.menu_warehouse_report"
+              action="action_run_ir_action_fsn"
+              sequence="3"/>
+</odoo>
