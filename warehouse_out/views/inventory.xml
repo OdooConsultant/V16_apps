@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_warehouse_out" model="ir.actions.act_window">
+        <field name="name">Warehouse Out</field>
+        <field name="res_model">warehouse.out</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+     <menuitem action="action_warehouse_out"
+              id="menu_warehouse_out"
+              parent="stock.menu_stock_root"/>
+</odoo>

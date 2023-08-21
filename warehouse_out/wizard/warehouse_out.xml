@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="warehouse_out_wizard_view_form" model="ir.ui.view">
+        <field name="name">warehouse.out.wizard.view.form</field>
+        <field name="model">warehouse.out</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="picking_type_id" domain="[('sequence_code', '=', 'OUT')]" />
+                    <field name="barcode_file"/>
+                </group>
+                <footer>
+                    <button string="Warehouse Out" class="btn-primary" name="read_file" type="object"/>
+                    <button string="Close" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>
