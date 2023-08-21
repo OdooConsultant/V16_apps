@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inventory Stock Movement</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <section id="sh_module_version">
+        <div class="container">
+            <div class="sh_center text-center" style='margin: 2rem 0;'>
+                <div class="row" style='align-items: center;'>
+                    <div class="col-lg-4 col-md-4 col-sm-12" style='text-align: left;'>
+                        <img src='logo.png' alt='logo' style="width: 80%;">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12" style='text-align: right;'>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Community</span>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Enterprise</span>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Odoo.sh</span>
+                    </div>
+                </div>
+                <div class="oe_span12">
+                  <h2 class="oe_slogan text-center" ><b>Inventory Stock Movement</b> </h2>
+                  <hr style="border: 1px solid;position:relative;width:150px;top:0px;padding:0px;margin-bottom: 2em;">
+                  <h3 class="text-muted text-center">Easy analysis and stock tracking with opening and closing quantities.</h3>
+                  <!--<div class="oe_centeralign oe_websiteonly">
+                    <a href="http://www.openerp.com/start?app=invoicing" style="background-color:#404686; border: 1px #404686" class="btn btn-primary py-2 px-4 mb-3">Start your free trial
+                    <i class='fa fa-download'></i></a>
+                  </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sh_highlighted_section_main container col-md-12">
+        <div class="container bg-white shadow px-3 py-0 overflow-hidden mb-5" style="border-radius: 2px;">
+            <div class="row">
+                <div class="col-lg-12 align-items-center d-inline-flex align-items-center mb-4 position-relative ">
+                    <div class="pt-4" style="padding-left:20px;">
+                        <h3 style="color:#404686;font-weight: bold;font-size: 22px;" class="mb-3">Why Inventory Stock Movement?</h3>
+                        <p style="font-weight:normal; font-size:14px; letter-spacing: 1px;">
+                            <b>Let me first give you an overview of this module.</b><br>
+                            This module provides the ability to track all inventory movements for all warehouses and for
+                            all companies. Users can track inventory movements between specific dates and for specific
+                            location.
+                            <br><br>
+                            It's always painful for most of the business to track the inventory movements, especially
+                            when you have a large product catalogue or high frequent inventory transactions. This app
+                            helps you to track the inventory for specific periods for all products for all warehouse locations.
+                            Users can filter reports by product category, products, duration, warehouses and locations.
+                            <span style="color:#404686;"><b>Not to miss out, it also allows you to download the excel report.</b></span><br><br>
+                            So, it saves your precious time that can be utilized to enhance your business instead.
+                            You might have not thought of, but this minute feature is of great significance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sh_tab_section container mt64 mb32" style="padding: 40px 0px;">
+        <div class="row" style="max-width:1540px; margin:0 auto; border-radius:15px">
+            <ul class="nav nav-tabs justify-content-center" role="tablist"
+                style="padding-bottom:10px; border-bottom:0px solid #aaa; background-color:transparent;margin: 0px auto;">
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#features" data-toggle="tab" aria-expanded="true" class="nav-link show active"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="features.png" alt="feature_icon" style="height: 16px;margin-right: 7px;" />
+                        Features</a>
+                </li>
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#setup" data-toggle="tab" aria-expanded="true" class="nav-link"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="configuration.png" alt="configuration_icon" style="height: 16px;margin-right: 7px;" />
+                        Set up</a>
+                </li>
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#workflow" data-toggle="tab" aria-expanded="true" class="nav-link"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="workflow.png" alt="workflow_icon" style="height: 16px;margin-right: 7px;" />
+                        Work Flow</a>
+                </li>
+            </ul>
+
+            <div class="container-fluid px-0">
+                <div class="tab-content pt-3" id="tabs_content">
+                    <!--Features-->
+                    <div class="tab-pane fade active show" id="features" role="tabpanel"
+                        aria-labelledby="key_feature_tab">
+                        <div class="sh_center text-center mb-5">
+                          <h4 style="font-size:30px; font-weight:600; color:#404686; margin-bottom:10px">Hot Features</h4>
+                            <hr style="width: 100px;border-width: 2px;border-color: #404686;" />
+                        </div>
+                        <div class="row" style="margin:0px auto 0;font-weight:normal; font-size:16px">
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Easy analysis of stock movements
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Stock Tracking (In / Out)
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                  Calculates Opening and Closing stocks
+                              </span>
+                            </div>
+                          </div>
+                        </div><br><br>
+                        <div class="row" style="margin:0px auto 0;font-weight:normal; font-size:16px">
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                  Warehouse wise separate reporting
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Can filter records by duration, warehouse locations and products
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Downloadable excel report
+                              </span>
+                            </div>
+                          </div>
+                        </div><br><br>
+                        <div class="sh_center text-center mb-5">
+                            <h4 style="font-size:30px; font-weight:600; color:#404686; margin-bottom:10px">Detailed Features</h4>
+                            <hr style="width: 100px;border-width: 2px;border-color: #404686;" />
+                        </div>
+                        <div class="tab-pane center">
+                            <ul style="padding:0">
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Users can generate report between specific dates and for specific warehouse locations.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Captures all the transactions between mentioned duration with their opening and closing stocks.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Users can filter by warehouses, locations, product categories and products.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Gives the total stock in qty & stock out qty of the products between specific period.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Allows you to download the report in well formatted excel file.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Users can easily analyze the inventory stock movements for better understanding.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It lessens your time consuming task to a great extent.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--Set Up-->
+                    <div class="tab-pane fade" id="setup" role="tabpanel" aria-labelledby="faqs_tab">
+                      <div class="mb48"></div>
+                      <section class="oe_container">
+                          <div class="panel" style="padding-left:75px; padding-right:75px;">
+                              <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; border-radius:0.25rem !important; min-height:83px">
+                                  <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                      <i>To begin with, have the Inventory Stock Movement Module downloaded in your system.
+                                          For its proper setup, go through the below steps.</i>
+                                  </span>
+                              </div>
+                          </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Inventory Stock Movement Module
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="apps_page.png" alt="Inventory Stock Movement App" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Firstly, you need to install the Inventory Stock Movement App from Odoo Apps.
+                              It's easy to locate, just search on the name, you can identify it with the search inventory icon.
+                              <span style="color:#404686;"><b>Ta-da, you are ready to go!!</b></span><br><br>
+                              <b>Apps >> Inventory Stock Movement >> Install</b>
+                          </div>
+                        </div>
+                      </section><br>
+                    </div>
+
+                    <!--Work Flow-->
+                    <div class="tab-pane fade" id="workflow" role="tabpanel" aria-labelledby="faqs_tab">
+                      <div class="mb48"></div>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Inventory Stock Movement Location
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step1.png" alt="Inventory stock movement location" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Go to inventory app, under reporting, you will find Inventory Stock Movements.<br>
+                              <b>Apps >> Inventory >> Reporting >> Inventory Stock Movements</b><br><br>
+                              Once you click on that,
+                              <span style="color:#404686;"><b>you will see a form view.</b></span>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Form View
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step2.png" alt="Form view" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              You will see the default data already present. It takes the default duration as current month.
+                              The mandatory fields are the duration, warehouse and location. You need to select the
+                              time period for which you want the records from the particular warehouse and location.
+                              <span style="color:#404686;"><b>You can also use the product category and product fields to filter
+                                  your records.</b></span><br><br>
+                              <b>Form >> Duration >> Warehouse >> Location</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Refresh Button
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step3.png" alt="Refresh button" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              If you have selected any product category or products it will only list out those products
+                              in the tree view. But if you haven't selected any of the two, it will list out all the
+                              products for the mentioned duration for that warehouse location.
+                              <span style="color:#404686;"><b>Click on the refresh button</b></span> everytime you want the updated information.<br><br>
+                              <b>Form >> Refresh</b><br><br>
+                              Not to miss out, you can see a <span style="color:#404686;"><b>zero movement</b></span> boolean on the left. If you uncheck that it will only show products with movements.
+                              <br>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            List of Stock Movements
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step4.png" alt="Stock movements" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              You will see the list of products with their category, opening stock, stock in, stock out
+                              and closing stock for the mentioned duration of that particular warehouse location.
+                              <span style="color:#404686;"><b>Isn't that amazing?</b></span><br><br>
+                              You can also see the
+                              <b>Total Opening, Total In, Total Out and Total Closing</b>
+                              at the top.
+                              <br>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Product Stock Movements
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step41.png" alt="Stock movements" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              You can checkout all movements for a particular product too. Click on any product in
+                              the tree view. A form view will pop up with product name, product category and product movements.
+                              <span style="color:#404686;"><b>Now, that's something you wouldn't have expected.</b></span><br><br>
+                              <b>Form >> stock movement list >> click any product</b>
+                              <br>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Print Report Button
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step5.png" alt="Print report" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              The most <span style="color:#404686;"><b>availing</b></span> feature is still remaining. You can even
+                              download this as excel report. On clicking the save button, you would see two more buttons on
+                              the top i.e. <span style="color:#404686;"><b>Print and Action</b></span>. Click the print button and
+                              select Inventory Stock Movement.<br><br>
+                              <b>Form >> Save >> Print >> Inventory Stock Movement</b>
+                              <br>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Excel Report
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step6.png" alt="Excel report" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              An excel report will be downloaded. <b>It would look like this.....</b><br>
+                              <span style="color:#404686;"><b>This is something you can't miss out.</b></span>
+                              You can now easily analyse your stocks.<br><br>
+                              Now, you don't have to manually calculate the stocks and their movements. Instead you can
+                              use our app that does the same for you and saves you a lot of time.
+                              <b>To enjoy more updates like this, stay tuned with us.</b>
+                              <br>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="sh_highlighted_section_main container col-md-12">
+                        <div class="container bg-white shadow px-3 py-0 overflow-hidden mb-5" style="border-radius: 2px; border:1px solid #404686; border-bottom:4px solid #404686;">
+                            <div class="row">
+                                <div class="col-lg-12 d-flex justify-content-center" style=" background-color:#E0E6F8;">
+                                    <div class="pt-4" style="padding-left:20px;">
+                                        <h5 style="font-size: 20px;" class="mb-3 text-center">
+                                            <i>I hope you have enjoyed our module tour and look forward to use it super soon!!</i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row">
+            <div class="d-flex justify-content-center">
+                <h2 class="oe_slogan">Many companies already enjoy it!!</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
