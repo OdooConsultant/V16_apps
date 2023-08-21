@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="change_purchase_order_tax_wizard_view_form" model="ir.ui.view">
+        <field name="name">change.purchase.order.tax.wizard.view.form</field>
+        <field name="model">purchase.order.tax.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="account_tax_id" widget="many2many_tags"
+                           domain="[('type_tax_use','=','purchase')]"
+                           context="{'default_type_tax_use': 'purchase', 'search_view_ref': 'account.account_tax_view_search'}"
+                           options="{'no_create': True}" />
+                </group>
+                <footer>
+                    <button string="Change TAX" class="btn-primary" name="change_tax" type="object"/>
+                    <button string="Close" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
