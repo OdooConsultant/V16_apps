@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quick Operations in SO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <section id="sh_module_version">
+        <div class="container">
+            <div class="sh_center text-center" style='margin: 2rem 0;'>
+                <div class="row" style='align-items: center;'>
+                    <div class="col-lg-4 col-md-4 col-sm-12" style='text-align: left;'>
+                        <img src='logo.png' alt='logo' style="width: 80%;">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12" style='text-align: right;'>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Community</span>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Enterprise</span>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Odoo.sh</span>
+                    </div>
+                </div>
+                <div class="oe_span12">
+                  <h2 class="oe_slogan text-center" ><b>Quick Operations in SO</b> </h2>
+                  <hr style="border: 1px solid;position:relative;width:150px;top:0px;padding:0px;margin-bottom: 2em;">
+                  <h3 class="text-muted text-center">Allows salesperson to validate deliveries, validation of invoice, and registering cash payment from SO itself at busy sales counters</h3>
+<!--                  <div class="oe_centeralign oe_websiteonly">-->
+<!--                    <a href="http://www.openerp.com/start?app=invoicing" style="background-color:#404686; border: 1px #404686" class="btn btn-primary py-2 px-4 mb-3">Start your free trial-->
+<!--                    <i class='fa fa-download'></i></a>-->
+<!--                  </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sh_highlighted_section_main container col-md-12">
+        <div class="container bg-white shadow px-3 py-0 overflow-hidden mb-5" style="border-radius: 2px;">
+            <div class="row">
+                <div class="col-lg-12 align-items-center d-inline-flex align-items-center mb-4 position-relative ">
+                    <div class="pt-4" style="padding-left:20px;">
+                        <h3 style="color:#404686;font-weight: bold;font-size: 22px;" class="mb-3">Why Quick Operations in SO?</h3>
+                        <p style="font-weight:normal; font-size:14px; letter-spacing: 1px;">
+                            <b>Let me first give you an overview of this module.</b><br>
+                            This module will give you the direct access for delivery validation, invoice validation
+                            and for registering payment directly from the sales order form.
+                            In busy sales counters, it becomes lengthy task to validate deliveries and invoices from different tabs.
+                            In order to avoid this prolonged task, we provide you with an app that can do everything within the order form.
+                            <br><br>
+                            Once the sales order is confirmed, it will show you a button to validate delivery,
+                            after which it will even allow you to create and validate invoices at the same place.
+                            <span style="color:#404686;"><b>It also allows you to register payment on the same window.</b></span><br><br>
+                            So, the customer need not to wait long for the completion of the whole process.
+                            There is one more perk of using this app. Once the payment is registered, it will open the invoice automatically.
+                            What you need to do is just print that invoice and hand it over to the customer. <span style="color:#404686;">That's it! </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sh_tab_section container mt64 mb32" style="padding: 40px 0px;">
+        <div class="row" style="max-width:1540px; margin:0 auto; border-radius:15px">
+            <ul class="nav nav-tabs justify-content-center" role="tablist"
+                style="padding-bottom:10px; border-bottom:0px solid #aaa; background-color:transparent;margin: 0px auto;">
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#features" data-toggle="tab" aria-expanded="true" class="nav-link show active"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="features.png" alt="feature_icon" style="height: 16px;margin-right: 7px;" />
+                        Features</a>
+                </li>
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#setup" data-toggle="tab" aria-expanded="true" class="nav-link"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="configuration.png" alt="configuration_icon" style="height: 16px;margin-right: 7px;" />
+                        Set up</a>
+                </li>
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#workflow" data-toggle="tab" aria-expanded="true" class="nav-link"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="workflow.png" alt="workflow_icon" style="height: 16px;margin-right: 7px;" />
+                        Work Flow</a>
+                </li>
+            </ul>
+
+            <div class="container-fluid px-0">
+                <div class="tab-content pt-3" id="tabs_content">
+                    <!--Features-->
+                    <div class="tab-pane fade active show" id="features" role="tabpanel"
+                        aria-labelledby="key_feature_tab">
+                        <div class="sh_center text-center mb-5">
+                          <h4 style="font-size:30px; font-weight:600; color:#404686; margin-bottom:10px">Hot Features</h4>
+                            <hr style="width: 100px;border-width: 2px;border-color: #404686;" />
+                        </div>
+                        <div class="row" style="margin:0px auto 0;font-weight:normal; font-size:16px">
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Quick sales operations
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Direct button to validate delivery
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Direct button to generate and validate invoice
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Direct button to register payment
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Very helpful for busy sales counters
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Saves a lot of time
+                              </span>
+                            </div>
+                          </div>
+                        </div><br><br>
+                        <div class="sh_center text-center mb-5">
+                            <h4 style="font-size:30px; font-weight:600; color:#404686; margin-bottom:10px">Detailed Features</h4>
+                            <hr style="width: 100px;border-width: 2px;border-color: #404686;" />
+                        </div>
+                        <div class="tab-pane center">
+                            <ul style="padding:0">
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It allows you to perform sales operations quickly.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    After the sales order is confirmed, you can validate the delivery directly from sales order.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It also allows you to create and validate invoice from the same window.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Not to forget, the register payment feature is available on the same window too!
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It is very helpful during the peak hours of the sales counters.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    The app lessens the task for the salesperson who otherwise needs to toggle between the tabs
+                                    of order, delivery and invoice.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Saves a lot of time for both the salesperson as well as the customer.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--Set Up-->
+                    <div class="tab-pane fade" id="setup" role="tabpanel" aria-labelledby="faqs_tab">
+                      <div class="mb48"></div>
+                      <section class="oe_container">
+                          <div class="panel" style="padding-left:75px; padding-right:75px;">
+                              <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; border-radius:0.25rem !important; min-height:83px">
+                                  <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                      <i>To begin with, have the Quick Operations in SO Module downloaded in your system.
+                                          For its proper setup, go through the below steps.</i>
+                                  </span>
+                              </div>
+                          </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Quick Operations in SO Module
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="apps_page.png" alt="Quick Operations in SO App" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Firstly, you need to install the Quick Operations in SO App from Odoo Apps.
+                              It's easy to locate, just search on the name, you can identify it with the all-in-one icon.
+                              <span style="color:#404686;"><b>Ta-da, you are ready to go!!</b></span><br><br>
+                              <b>Apps >> Quick Operations in SO >> Install</b>
+                          </div>
+                        </div>
+                      </section><br>
+
+                    </div>
+
+                    <!--Work Flow-->
+                    <div class="tab-pane fade" id="workflow" role="tabpanel" aria-labelledby="faqs_tab">
+                      <div class="mb48"></div>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Create a Sales Order
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step1.png" alt="Create Sales Order" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Open Sales app, tap on create and fill the basic fields.
+                              Do not forget to add products.
+                              <span style="color:#404686;"><b>Save and confirm it.</b></span>
+                              <br><br>
+                              <b>Apps >> Sales >> Create >> Fill in the form with few products >> Save >> Confirm</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Delivery Validate
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step2.png" alt="Delivery Validate" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              To validate the delivery, you do not have to move to the delivery page.
+                              We provide a direct button in the sales order form. Click on Delivery Validate button.
+                              <span style="color:#404686;"><b>A wizard will pop up.</b></span>
+                              <br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Apply for done quantities
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step3.png" alt="Apply done quantities" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              The wizard will have two buttons, click on the apply button.
+                              This means that the order is fulfilled.
+                              <span style="color:#404686;"><b>Hold on, you are almost done!</b></span><br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate >> Apply</b>
+                              <br>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Create Invoice
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step4.png" alt="Create Invoice" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              In order to generate an invoice, click on Create Invoice button.
+                              <span style="color:#404686;"><b>A wizard to create invoice will pop up.</b></span>
+                              <br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate >> Create Invoice</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Create Invoice Wizard
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step5.png" alt="Create Invoice Wizard" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              You will have to select the invoice type i.e. Regular, Down Payment (Percentage)
+                              or Down Payment (Fixed Amount). Fill in the other requirements if any.
+                              <span style="color:#404686;"><b>Click on the Invoice button at the end.</b></span>
+                              <br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate >> Create Invoice >> select Invoice Type >> Create Invoice</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Validate Invoice
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step6.png" alt="Validate Invoice" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              To validate the sale order invoice, click on Validate Invoice button on the top.
+                              <span style="color:#404686;"><b>Have patience, just two more steps to go!</b></span>
+                              <br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate >> Create Invoice >> Validate Invoice</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Register Payment
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step7.png" alt="Register Payment" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              To register the payment of the sales order, tap on Register Payment button.
+                              <span style="color:#404686;"><b>A Register Payment Wizard will show up.</b></span>
+                              <br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate >> Create Invoice >> Validate Invoice >> Register Payment</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Create Payment button
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step8.png" alt="Create Payment Button" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Fill in the necessary details required for the payment and
+                              do not forget to tap on Create Payment button.
+                              <span style="color:#404686;"><b>Ta-da, your payment is done too!!</b></span>
+                              <br><br>
+                              <b>Confirmed Sales Order >> Delivery Validate >> Create Invoice >> Validate Invoice >> Register Payment >> Create Payment</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Customer Invoice
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step9.png" alt="Customer Invoice" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              <b>You can now access paid invoice from the Invoice button on the top-right corner.</b><br><br>
+                              <span style="color:#404686;"><b>Hurrah, it's done!</b></span><br>
+                              That's it, all you did is followed few easy steps to reach the goal.
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="sh_highlighted_section_main container col-md-12">
+                        <div class="container bg-white shadow px-3 py-0 overflow-hidden mb-5" style="border-radius: 2px; border:1px solid #404686; border-bottom:4px solid #404686">
+                            <div class="row">
+                                <div class="col-lg-12 d-flex justify-content-center" style=" background-color:#E0E6F8;">
+                                    <div class="pt-4" style="padding-left:20px;">
+                                        <h5 style="font-size: 20px;" class="mb-3 text-center">
+                                            <i>I hope you have enjoyed our module tour and look forward to use it super soon!!</i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row">
+            <div class="d-flex justify-content-center">
+                <h2 class="oe_slogan">Many companies already enjoy it!!</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div>
+      <section>
+        <div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step1.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                   <li><h4>Go to -> Sale Order -> Create and Confirm.</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>To validate delivery of sale order click on Delivery Validate.</h4></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step3.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>Now, click on apply for done quantity of products.</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>Click on the "Create Invoice" to generate invoice of sale order.</h4></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step4.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step5.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                   <li><h4>Now, select invoice type( regular, down payment(percentage), down payment(fixed amount)).</h4></li>
+                   <li><h4>And click on create invoice button.</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>Click on the Validate invoice button to validate the sale order payment.</h4></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step6.png" alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step7.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>To register payment of sale order, click on the Register payment.</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>And click on the create payment button.</h4></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step8.png" alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step9.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>Finally, we can see the invoice for that sale order.</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </body>
+</html>-->

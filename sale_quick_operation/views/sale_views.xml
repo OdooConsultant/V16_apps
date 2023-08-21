@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <button name="action_cancel" position="before">
+                <field name="ready_picking_ids" invisible="1"/>
+                <field name="draft_invoice_ids" invisible="1"/>
+                <field name="unpaid_invoice_ids" invisible="1"/>
+                <button name="delivery_validate" string="Delivery Validate" type="object" class="oe_highlight"
+                        attrs="{'invisible': [('ready_picking_ids', '=', [])]}" />
+                <button name="invoice_validate" string="Validate Invoice" type="object" class="oe_highlight"
+                        attrs="{'invisible': [('draft_invoice_ids', '=', [])]}" />
+                <button name="invoice_register_payment" string="Register Payment" type="object" class="oe_highlight"
+                        attrs="{'invisible': [('unpaid_invoice_ids', '=', [])]}" />
+            </button>
+
+        </field>
+    </record>
+
+</odoo>
