@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate Product Sequence</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <section id="sh_module_version">
+        <div class="container">
+            <div class="sh_center text-center" style='margin: 2rem 0;'>
+                <div class="row" style='align-items: center;'>
+                    <div class="col-lg-4 col-md-4 col-sm-12" style='text-align: left;'>
+                        <img src='logo.png' alt='logo' style="width: 80%;">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12" style='text-align: right;'>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Community</span>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Enterprise</span>
+                        <span class='btn btn-primary'
+                            style="position: relative; overflow: hidden; border: 1px solid transparent; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; background-color: #404686;border-color: #404686;"><i
+                                class='fa fa-check' style="margin-right: 9px;"></i>Odoo.sh</span>
+                    </div>
+                </div>
+                <div class="oe_span12">
+                  <h2 class="oe_slogan text-center" ><b>Generate Product Sequence</b> </h2>
+                  <hr style="border: 1px solid;position:relative;width:150px;top:0px;padding:0px;margin-bottom: 2em;">
+                  <h3 class="text-muted text-center">Easy generation of internal reference of product variant.</h3>
+<!--                  <div class="oe_centeralign oe_websiteonly">-->
+<!--                    <a href="http://www.openerp.com/start?app=invoicing" style="background-color:#404686; border: 1px #404686" class="btn btn-primary py-2 px-4 mb-3">Start your free trial-->
+<!--                    <i class='fa fa-download'></i></a>-->
+<!--                  </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sh_highlighted_section_main container col-md-12">
+        <div class="container bg-white shadow px-3 py-0 overflow-hidden mb-5" style="border-radius: 2px;">
+            <div class="row">
+                <div class="col-lg-12 align-items-center d-inline-flex align-items-center mb-4 position-relative ">
+                    <div class="pt-4" style="padding-left:20px;">
+                        <h3 style="color:#404686;font-weight: bold;font-size: 22px;" class="mb-3">Why Generate Product Sequence?</h3>
+                        <p style="font-weight:normal; font-size:14px; letter-spacing: 1px;">
+                            <b>Let me first give you an overview of this module.</b><br>
+                            This module will allow you to create SKUs even for the variants of the products.
+                            So, a product having let's say 4 variants, will have unique code for each variant.
+                            It now becomes easy to find the product variant directly with its SKU.
+                            The task of locating a specific variant of a product is lengthy,
+                            you first need to search for the product and then check out its variants.
+                            <br><br>
+                            Moreover, if the name of the product changes, it becomes even more difficult.
+                            The introduction of our module has made this task much easier. You now directly have to
+                            search with the product variant's SKU or the Internal Reference.
+                            <span style="color:#404686;"><b>Our app generated SKUs for all the product variants.</b></span>
+                            Further, it can also be utilized to generate barcodes.<br><br>
+                            So, it saves your precious time that can be utilized to enhance your business instead.
+                            You might have not thought of, but this minute feature is of great significance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sh_tab_section container mt64 mb32" style="padding: 40px 0px;">
+        <div class="row" style="max-width:1540px; margin:0 auto; border-radius:15px">
+            <ul class="nav nav-tabs justify-content-center" role="tablist"
+                style="padding-bottom:10px; border-bottom:0px solid #aaa; background-color:transparent;margin: 0px auto;">
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#features" data-toggle="tab" aria-expanded="true" class="nav-link show active"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="features.png" alt="feature_icon" style="height: 16px;margin-right: 7px;" />
+                        Features</a>
+                </li>
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#setup" data-toggle="tab" aria-expanded="true" class="nav-link"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="configuration.png" alt="configuration_icon" style="height: 16px;margin-right: 7px;" />
+                        Set up</a>
+                </li>
+                <li class="nav-item"
+                    style="background-color:#E0E6F8; color:#fff; border-radius: 2px; font-weight:600; font-size:14px; margin:0 5px">
+                    <a href="#workflow" data-toggle="tab" aria-expanded="true" class="nav-link"
+                        style="color:#404686; border:2px solid #404686;border-radius: 2px;letter-spacing: 1px;"><img
+                            src="workflow.png" alt="workflow_icon" style="height: 16px;margin-right: 7px;" />
+                        Work Flow</a>
+                </li>
+            </ul>
+
+            <div class="container-fluid px-0">
+                <div class="tab-content pt-3" id="tabs_content">
+                    <!--Features-->
+                    <div class="tab-pane fade active show" id="features" role="tabpanel"
+                        aria-labelledby="key_feature_tab">
+                        <div class="sh_center text-center mb-5">
+                          <h4 style="font-size:30px; font-weight:600; color:#404686; margin-bottom:10px">Hot Features</h4>
+                            <hr style="width: 100px;border-width: 2px;border-color: #404686;" />
+                        </div>
+                        <div class="row" style="margin:0px auto 0;font-weight:normal; font-size:16px">
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Access to IN Product Reference
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                Generates SKUs or Internal References
+                              </span>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-2">
+                            <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; background-color:#E0E6F8; border-radius:0.25rem !important; min-height:83px">
+                              <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                 Easy search for product variants
+                              </span>
+                            </div>
+                          </div>
+                        </div><br><br>
+                        <div class="sh_center text-center mb-5">
+                            <h4 style="font-size:30px; font-weight:600; color:#404686; margin-bottom:10px">Detailed Features</h4>
+                            <hr style="width: 100px;border-width: 2px;border-color: #404686;" />
+                        </div>
+                        <div class="tab-pane center">
+                            <ul style="padding:0">
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Allows you to enable the IN Product Reference.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    You can add codes to the various product attributes.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It will automatically generate SKUs or Internal References for the product Variants.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    You can also add SKUs for products without variants.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It allows easy search for the specific variant of a product with SKU.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    It saves time required for locating the product first and then the variant.
+                                </li>
+                                <li class="shadow rounded" style="padding:20px; margin-bottom:20px; font-size:16px; color:#212121; font-weight:600; letter-spacing:1px; display:block; border-radius:0.25rem !important"><span class="fa fa-arrow-right" style="color:#404686; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    Further, it can also be used to generate barcodes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--Set Up-->
+                    <div class="tab-pane fade" id="setup" role="tabpanel" aria-labelledby="faqs_tab">
+                      <div class="mb48"></div>
+                      <section class="oe_container">
+                          <div class="panel" style="padding-left:75px; padding-right:75px;">
+                              <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding:15px; border:1px solid #404686; border-bottom:4px solid #404686; border-radius:0.25rem !important; min-height:83px">
+                                  <span style="color:#212121; font-weight:600; vertical-align:middle; padding-left:10px; text-align:center">
+                                      To begin with, have the Generate Product Sequence Module downloaded in your system.
+                                      For its proper setup, go through the below steps.
+                                  </span>
+                              </div>
+                          </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Generate Product Sequence Module
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="apps_page.png" alt="Generate Product Sequence App" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Firstly, you need to install the Generate Product Sequence App from Odoo Apps.
+                              It's easy to locate, just search on the name, you can identify it with the sequence icon.
+                              <span style="color:#404686;"><b>Hold on, you also need to enable it.</b></span><br><br>
+                              <b>Apps >> Generate Product Sequence >> Install</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Enable this feature
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step1.png" alt="Enable Feature" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Go to Inventory or Sales, under Configuration select Attribute, activate IN Product Reference for any attribute.
+                              Now, you will be able to access this <span style="color:#404686;"><b>wonderful feature</b></span>.
+                              Do not forget to add code for attributes. <br><br>
+                              <b>Inventory/Sales >> Configuration >> Attributes >> activate IN Product Reference >> Add code for attributes</b><br><br>
+                              <span style="color:#404686;"><b>Now you are ready to utilise this feature.
+                                  For more information go through the Work Flow.</b></span>
+                          </div>
+                        </div>
+                      </section><br>
+                    </div>
+
+                    <!--Work Flow-->
+                    <div class="tab-pane fade" id="workflow" role="tabpanel" aria-labelledby="faqs_tab">
+                      <div class="mb48"></div>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Create a new Product
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step2.png" alt="Create Product" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              Move to products, create a new product. In variants, add the attribute for which you
+                              enabled IN Product Reference and save it.<br>
+                              <b>Sales >> Products >> Products >> Create >> Variants >> Add attribute</b><br><br>
+                              <span style="color:#404686;"><b>It will automatically generate product SKU/Internal Reference.</b></span>
+                              You can see that by locating the product variant.
+                              <br>
+                              <b>Sales >> Products >> Product Variants >> Select the product variant just created</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="oe_container">
+                        <div class="panel shadow" style="border:2px #404686 solid">
+                          <div class="panel-heading" style="font-size:18px; line-height:30px; background-color:#404686; color:white; font-family:'Open Sans', sans-serif; font-weight:600; text-align:center;">
+                            Product SKU
+                          </div>
+                          <div class="d-flex justify-content-center" style="padding:10px">
+                            <img style="width:70%;overflow:hidden;" class="img-thumbnail" src="step3.png" alt="Product SKU" />
+                          </div>
+                          <div style="padding-bottom: 10px; padding-left: 190px; padding-right: 190px;">
+                              We can see the evaluation of the code for each variant of the product.
+                              <span style="color:#404686;"><b>The Internal reference looks like "Product UID + Attribute Code".</b></span>
+                              <br><br>
+                              It can also generate product SKU for single as well as multiple products even without variants.<br>
+                              <b>Products >> select the newly created product >> Click the variant button present on top</b>
+                          </div>
+                        </div>
+                      </section><br>
+                      <section class="sh_highlighted_section_main container col-md-12">
+                        <div class="container bg-white shadow px-3 py-0 overflow-hidden mb-5" style="border-radius: 2px; border:1px solid #404686; border-bottom:4px solid #404686;">
+                            <div class="row">
+                                <div class="col-lg-12 d-flex justify-content-center" style=" background-color:#E0E6F8;">
+                                    <div class="pt-4" style="padding-left:20px;">
+                                        <h5 style="font-size: 20px;" class="mb-3 text-center">
+                                            I hope you have enjoyed our module tour and look forward to use it super soon!!
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="oe_container">
+        <div class="oe_row">
+            <div class="d-flex justify-content-center">
+                <h2 class="oe_slogan">Many companies already enjoy it!!</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div>
+      <section>
+        <div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step1.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>Go to -> Inventory or Sale -> Configuration -> Attribute.</h4></li>
+                  <li><h4>Under the Attribute, active <b>"IN Product Reference"</b>.</h4></li>
+                  <li><h4>Now, add code of attribute.</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>Create a new product and click on the Variant.</h4></li>
+                  <li><h4>Select attribute for that product and save it.</h4></li>
+                  <li><h4>It can Automatically generate product SKU/Internal Reference.</h4></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="padding:30px;">
+            <div class="col-md-6">
+              <div>
+                <img style="width:100%;overflow:hidden;" src="step3.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <ul>
+                  <li><h4>We can see the evaluation of the code for each variant of the product.</h4></li>
+                  <li><h4>And also it can generate product SKU for single or multiple or products without any variants.</h4></li>
+                  <li><h4>We can check internal reference of Product or it's Variant. it's look like "Product UID + Attributes Code".</h4></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </body>
+</html>-->
