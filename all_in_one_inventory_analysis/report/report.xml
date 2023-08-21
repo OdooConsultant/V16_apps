@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_fsn_analysis_xlsx" model="ir.actions.report">
+        <field name="name">Inventory Fsn Analysis</field>
+        <field name="model">inventory.fsn.analysis</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">all_in_one_inventory_analysis.report_fsn_analysis_xlsx</field>
+        <field name="report_file">all_in_one_inventory_analysis.report_fsn_analysis_xlsx</field>
+        <field name="binding_model_id" ref="model_inventory_fsn_analysis"/>
+        <field name="binding_type">report</field>
+    </record>
+    <record id="report_turnover_analysis_xlsx" model="ir.actions.report">
+        <field name="name">Inventory Turnover Analysis</field>
+        <field name="model">inventory.turnover.analysis</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">all_in_one_inventory_analysis.report_turnover_analysis</field>
+        <field name="report_file">all_in_one_inventory_analysis.report_turnover_analysis</field>
+        <field name="binding_model_id" ref="model_inventory_turnover_analysis"/>
+        <field name="binding_type">report</field>
+    </record>
+    <record id="report_stock_movement_xlsx" model="ir.actions.report">
+        <field name="name">Inventory Stock Movement</field>
+        <field name="model">inventory.stock.movement</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">all_in_one_inventory_analysis.report_stock_movement_xlsx</field>
+        <field name="report_file">all_in_one_inventory_analysis.report_stock_movement_xlsx</field>
+        <field name="binding_model_id" ref="model_inventory_stock_movement"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
